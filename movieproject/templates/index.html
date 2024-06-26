@@ -7,7 +7,7 @@
         <div class="col-md-4">
             <div class="card">
                 <img class="card-img-top" src="{{i.img.url}}" alt="" height="250">
-                <div class="card-body">
+                <div class="card-body" style="height: 250px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
                   <h5 class="card-title">{{i.name}}</h5>
                   <p class="card-text">{{i.desc}}</p>
                   <a href="{% url 'movieapp:detail' i.id %}" class="btn btn-warning">View Details</a>
